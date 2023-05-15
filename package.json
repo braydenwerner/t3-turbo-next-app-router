@@ -1,5 +1,5 @@
 {
-  "name": "create-t3-turbo",
+  "name": "blaze-ai",
   "private": true,
   "engines": {
     "node": ">=v18.16.0"
@@ -18,7 +18,7 @@
     "type-check": "turbo type-check"
   },
   "dependencies": {
-    "@acme/eslint-config": "^0.1.0",
+    "@blaze-ai/eslint-config": "workspace:*",
     "@ianvs/prettier-plugin-sort-imports": "^3.7.2",
     "@manypkg/cli": "^0.20.0",
     "@types/prettier": "^2.7.2",
