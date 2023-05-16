@@ -1,16 +1,30 @@
 // Could not figure out how to add tRPC provider without client component
 "use client";
 
-import AuthSessionProvider from "~/providers/auth-session-provider";
+import { Toaster } from "@blaze-ai/ui";
+import { TailwindIndicator } from "@blaze-ai/ui/src/tailwind-indicator";
+import { cn } from "@blaze-ai/utils";
+
 import { api } from "~/utils/api";
+import { fontSans } from "~/lib/fonts";
+import AuthSessionProvider from "~/providers/auth-session-provider";
 import "~/styles/globals.css";
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <html>
-      <head></head>
-      <body>
-        <AuthSessionProvider>{children}</AuthSessionProvider>
+    <html lang="en" suppressHydrationWarning>
+      <head />
+      <body
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased",
+          fontSans.variable,
+        )}
+      >
+        <AuthSessionProvider>
+          <div className="relative flex min-h-screen flex-col">{children}</div>
+          <TailwindIndicator />
+        </AuthSessionProvider>
+        <Toaster />
       </body>
     </html>
   );

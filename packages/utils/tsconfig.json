@@ -5,12 +5,7 @@
     "paths": {
       "~/*": ["./src/*"]
     },
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
-    "strictNullChecks": true
+    "plugins": [{ "name": "next" }]
   },
   "exclude": [],
   "include": [
@@ -19,7 +14,6 @@
     "**/*.tsx",
     "**/*.cjs",
     "**/*.mjs",
-    ".next/types/**/*.ts",
-    "../../packages/ui/src/tailwind-indicator.tsx"
+    ".next/types/**/*.ts"
   ]
 }

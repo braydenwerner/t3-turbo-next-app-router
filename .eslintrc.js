@@ -13,8 +13,8 @@ const config = {
     ],
   },
   settings: {
-    next: {
-      rootDir: ["apps/nextjs"],
+    web: {
+      rootDir: ["apps/web"],
     },
   },
 };

@@ -11,22 +11,19 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@prisma/client": "^4.13.0",
-    "@blaze-ai/tailwind-config": "workspace:*",
-    "@tanstack/react-query": "^4.29.5",
-    "@trpc/client": "^10.25.0",
-    "@trpc/next": "^10.25.0",
-    "@trpc/react-query": "^10.25.0",
-    "@trpc/server": "^10.25.0",
-    "next": "^13.4.2",
-    "next-auth": "^4.22.1",
+    "@blaze-ai/utils": "workspace:*",
+    "@radix-ui/react-slot": "^1.0.1",
+    "@radix-ui/react-toast": "^1.1.3",
+    "class-variance-authority": "^0.6.0",
+    "clsx": "^1.2.1",
+    "lucide-react": "^0.216.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "superjson": "1.9.1",
-    "zod": "^3.21.4"
+    "tailwind-merge": "^1.12.0",
+    "tailwindcss-animate": "^1.0.5"
   },
   "devDependencies": {
- "@blaze-ai/eslint-config": "workspace:*",
+    "@blaze-ai/eslint-config": "workspace:*",
     "@types/node": "^18.16.5",
     "@types/react": "^18.2.6",
     "@types/react-dom": "^18.2.4",

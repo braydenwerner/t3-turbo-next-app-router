@@ -27,5 +27,9 @@
     "prettier-plugin-tailwindcss": "^0.2.8",
     "turbo": "^1.9.4",
     "typescript": "^5.0.4"
-  }
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
 }
