@@ -7,7 +7,8 @@ import { cn } from "@blaze-ai/utils";
 
 import { api } from "~/utils/api";
 import { fontSans } from "~/lib/fonts";
-import AuthSessionProvider from "~/providers/auth-session-provider";
+import { AuthSessionProvider } from "~/providers/auth-session-provider";
+import { ThemeProvider } from "~/providers/theme-provider";
 import "~/styles/globals.css";
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
@@ -21,7 +22,11 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         )}
       >
         <AuthSessionProvider>
-          <div className="relative flex min-h-screen flex-col">{children}</div>
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            <div className="relative flex min-h-screen flex-col">
+              {children}
+            </div>
+          </ThemeProvider>
           <TailwindIndicator />
         </AuthSessionProvider>
         <Toaster />

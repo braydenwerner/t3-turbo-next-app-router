@@ -1,6 +1,8 @@
 "use client";
 
-import { Button, Test, ToastAction, useToast } from "@blaze-ai/ui";
+import { Button, ToastAction, useToast } from "@blaze-ai/ui";
+
+import { ThemeToggle } from "~/features/ui/theme-toggle";
 
 export default function IndexPage() {
   const { toast } = useToast();
@@ -21,8 +23,8 @@ export default function IndexPage() {
       >
         Add to calendar
       </Button>
-      <Test />
       <div className="mt-2 bg-accent">test 2</div>
+      <ThemeToggle />
     </div>
   );
 }
