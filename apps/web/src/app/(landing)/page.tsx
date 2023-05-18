@@ -4,7 +4,7 @@ import { Button, ToastAction, useToast } from "@blaze-ai/ui";
 
 import { ThemeToggle } from "~/features/ui/theme-toggle";
 
-export default function IndexPage() {
+export default function LandingPage() {
   const { toast } = useToast();
 
   return (
