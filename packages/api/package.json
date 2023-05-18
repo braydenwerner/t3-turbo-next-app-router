@@ -1,5 +1,5 @@
 {
-  "name": "@blaze-ai/api",
+  "name": "@acme/api",
   "version": "0.1.0",
   "main": "./index.ts",
   "types": "./index.ts",
@@ -11,14 +11,14 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@blaze-ai/auth": "workspace:*",
-    "@blaze-ai/db": "workspace:*",
+    "@acme/auth": "workspace:*",
+    "@acme/db": "workspace:*",
     "@trpc/server": "^10.25.0",
     "superjson": "1.9.1",
     "zod": "^3.21.4"
   },
   "devDependencies": {
-    "@blaze-ai/eslint-config": "workspace:*",
+    "@acme/eslint-config": "workspace:*",
     "eslint": "^8.40.0",
     "typescript": "^5.0.4"
   }

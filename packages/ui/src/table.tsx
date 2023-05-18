@@ -1,6 +1,8 @@
+"use client";
+
 import * as React from "react";
 
-import { cn } from "@blaze-ai/utils";
+import { cn } from "@acme/utils";
 
 const Table = React.forwardRef<
   HTMLTableElement,

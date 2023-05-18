@@ -9,7 +9,7 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@blaze-ai/ui";
+} from "@acme/ui";
 
 import { Icons } from "~/features/ui/icons";
 

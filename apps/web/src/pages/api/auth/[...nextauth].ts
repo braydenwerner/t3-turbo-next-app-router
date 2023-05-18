@@ -1,5 +1,5 @@
 import NextAuth from "next-auth";
 
-import { authOptions } from "@blaze-ai/auth";
+import { authOptions } from "@acme/auth";
 
 export default NextAuth(authOptions);

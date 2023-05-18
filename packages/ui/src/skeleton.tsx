@@ -1,4 +1,4 @@
-import { cn } from "@blaze-ai/utils";
+import { cn } from "@acme/utils";
 
 function Skeleton({
   className,

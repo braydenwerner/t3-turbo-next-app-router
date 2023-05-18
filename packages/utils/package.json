@@ -1,5 +1,5 @@
 {
-  "name": "@blaze-ai/utils",
+  "name": "@acme/utils",
   "version": "0.1.0",
   "main": "./index.ts",
   "types": "./index.ts",
@@ -15,7 +15,7 @@
     "tailwind-merge": "^1.12.0"
   },
   "devDependencies": {
-    "@blaze-ai/eslint-config": "workspace:*",
+    "@acme/eslint-config": "workspace:*",
     "@types/node": "^18.16.5",
     "eslint": "^8.40.0",
     "typescript": "^5.0.4"

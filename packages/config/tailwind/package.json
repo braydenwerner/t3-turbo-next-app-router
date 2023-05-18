@@ -1,5 +1,5 @@
 {
-  "name": "@blaze-ai/tailwind-config",
+  "name": "@acme/tailwind-config",
   "version": "0.1.0",
   "main": "index.ts",
   "license": "MIT",

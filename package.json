@@ -18,7 +18,7 @@
     "type-check": "turbo type-check"
   },
   "dependencies": {
-    "@blaze-ai/eslint-config": "workspace:*",
+    "@acme/eslint-config": "workspace:*",
     "@ianvs/prettier-plugin-sort-imports": "^3.7.2",
     "@manypkg/cli": "^0.20.0",
     "@types/prettier": "^2.7.2",

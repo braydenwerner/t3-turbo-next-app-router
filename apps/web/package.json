@@ -1,5 +1,5 @@
 {
-  "name": "@blaze-ai/web",
+  "name": "@acme/web",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -13,12 +13,12 @@
     "with-env": "dotenv -e ../../.env --"
   },
   "dependencies": {
-    "@blaze-ai/api": "workspace:*",
-    "@blaze-ai/auth": "workspace:*",
-    "@blaze-ai/db": "workspace:*",
-    "@blaze-ai/tailwind-config": "workspace:*",
-    "@blaze-ai/ui": "workspace:*",
-    "@blaze-ai/utils": "workspace:*",
+    "@acme/api": "workspace:*",
+    "@acme/auth": "workspace:*",
+    "@acme/db": "workspace:*",
+    "@acme/tailwind-config": "workspace:*",
+    "@acme/ui": "workspace:*",
+    "@acme/utils": "workspace:*",
     "@t3-oss/env-nextjs": "^0.3.1",
     "@tanstack/react-query": "^4.29.5",
     "@trpc/client": "^10.25.0",
@@ -35,7 +35,7 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
-    "@blaze-ai/eslint-config": "workspace:*",
+    "@acme/eslint-config": "workspace:*",
     "@types/node": "^18.16.5",
     "@types/react": "^18.2.6",
     "@types/react-dom": "^18.2.4",
