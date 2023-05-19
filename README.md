@@ -77,6 +77,12 @@ turbo dev
 
 View root `package.json` for more scripts.
 
+## Deployment
+
+![deployment steps](https://raw.githubusercontent.com/braydenwerner/t3-turbo-next-app-router/master/.github/deployment.png)
+
+Check out [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo).
+
 ## References
 
 This template is modified from [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo).
