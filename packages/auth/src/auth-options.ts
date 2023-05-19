@@ -43,9 +43,6 @@ export const authOptions: NextAuthOptions = {
     },
   },
   adapter: PrismaAdapter(db),
-  pages: {
-    signIn: "/login",
-  },
   providers: [
     DiscordProvider({
       clientId: env.DISCORD_CLIENT_ID,
