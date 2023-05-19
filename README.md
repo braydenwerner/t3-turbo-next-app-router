@@ -79,9 +79,7 @@ View root `package.json` for more scripts.
 
 ## Deployment
 
-![deployment steps](https://raw.githubusercontent.com/braydenwerner/t3-turbo-next-app-router/master/.github/deployment.png)
-
-Check out [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo).
+<img width="800" alt="deployment steps" src="https://raw.githubusercontent.com/braydenwerner/t3-turbo-next-app-router/master/.github/deployment.jpg">
 
 ## References
 
