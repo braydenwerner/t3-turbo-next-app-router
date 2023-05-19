@@ -26,14 +26,14 @@ apps
       ├─ React 18
       └─ Tailwind CSS
 packages
- ├─ api
- |   └─ tRPC v10 router definition
  ├─ auth
  |   └─ authentication using next-auth
  ├─ config
  |   └─ shared config files for eslint and tailwind
  ├─ db
  |   └─ typesafe db-calls using Prisma
+ ├─ ui
+ |   └─ tailwind styled radix-ui components from https://github.com/shadcn/ui
  └─ utils
      └─ shared utility files
 ```
