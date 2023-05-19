@@ -32,6 +32,7 @@ importers:
       '@acme/tailwind-config': workspace:*
       '@acme/ui': workspace:*
       '@acme/utils': workspace:*
+      '@prisma/nextjs-monorepo-workaround-plugin': ^4.14.1
       '@t3-oss/env-nextjs': ^0.3.1
       '@tanstack/react-query': ^4.29.5
       '@types/node': ^18.16.5
@@ -71,6 +72,7 @@ importers:
       zod: 3.21.4
     devDependencies:
       '@acme/eslint-config': link:../../packages/config/eslint
+      '@prisma/nextjs-monorepo-workaround-plugin': 4.14.1
       '@types/node': 18.16.9
       '@types/react': 18.2.6
       '@types/react-dom': 18.2.4
@@ -822,6 +824,10 @@ packages:
   /@prisma/engines/4.14.0:
     resolution: {integrity: sha512-PDNlhP/1vyTgmNyiucGqGCdXIp7HIkkvKO50si3y3PcceeHvqtiKPaH1iJdz63jCWMVMbj2MElSxXPOeBvEVIQ==}
     requiresBuild: true
+
+  /@prisma/nextjs-monorepo-workaround-plugin/4.14.1:
+    resolution: {integrity: sha512-WbK3DajKklEdeWh4Ds4ltTTBs0s+0yqXMtGVR1jFB2ma8vtrqKdRJtEi0xVNc8Sb6V+kS2fJ5sPSNP43LeMRRQ==}
+    dev: true
 
   /@radix-ui/number/1.0.0:
     resolution: {integrity: sha512-Ofwh/1HX69ZfJRiRBMTy7rgjAzHmwe4kW9C9Y99HTRUcYLUuVT0KESFj15rPjRgKJs20GPq8Bm5aEDJ8DuA3vA==}
