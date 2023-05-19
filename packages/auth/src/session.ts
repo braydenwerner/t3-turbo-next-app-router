@@ -16,3 +16,9 @@ type GetServerSessionContext =
 export const getServerSession = (ctx: GetServerSessionContext) => {
   return $getServerSession(ctx.req, ctx.res, authOptions);
 };
+
+export async function getCurrentUser() {
+  const session = await $getServerSession(authOptions);
+
+  return session?.user;
+}

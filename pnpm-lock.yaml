@@ -26,7 +26,6 @@ importers:
 
   apps/web:
     specifiers:
-      '@acme/api': workspace:*
       '@acme/auth': workspace:*
       '@acme/db': workspace:*
       '@acme/eslint-config': workspace:*
@@ -35,10 +34,6 @@ importers:
       '@acme/utils': workspace:*
       '@t3-oss/env-nextjs': ^0.3.1
       '@tanstack/react-query': ^4.29.5
-      '@trpc/client': ^10.25.0
-      '@trpc/next': ^10.25.0
-      '@trpc/react-query': ^10.25.0
-      '@trpc/server': ^10.25.0
       '@types/node': ^18.16.5
       '@types/react': ^18.2.6
       '@types/react-dom': ^18.2.4
@@ -55,9 +50,9 @@ importers:
       superjson: 1.9.1
       tailwindcss: ^3.3.2
       typescript: ^5.0.4
+      zact: ^0.0.2
       zod: ^3.21.4
     dependencies:
-      '@acme/api': link:../../packages/api
       '@acme/auth': link:../../packages/auth
       '@acme/db': link:../../packages/db
       '@acme/tailwind-config': link:../../packages/config/tailwind
@@ -65,10 +60,6 @@ importers:
       '@acme/utils': link:../../packages/utils
       '@t3-oss/env-nextjs': 0.3.1_z34kx2cq3kivpffalfeqk2ugre
       '@tanstack/react-query': 4.29.7_biqbaboplfbrettd7655fr4n2y
-      '@trpc/client': 10.26.0_@trpc+server@10.26.0
-      '@trpc/next': 10.26.0_5wlj4zqd5hbm7ghnogzr2cn6qq
-      '@trpc/react-query': 10.26.0_umfrugaz453xuwiifkhz4usemu
-      '@trpc/server': 10.26.0
       lucide-react: 0.216.0_react@18.2.0
       next: 13.4.2_biqbaboplfbrettd7655fr4n2y
       next-auth: 4.22.1_cmp7sjki5xcmfyvhcokzzink7a
@@ -76,6 +67,7 @@ importers:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       superjson: 1.9.1
+      zact: 0.0.2_next@13.4.2
       zod: 3.21.4
     devDependencies:
       '@acme/eslint-config': link:../../packages/config/eslint
@@ -87,27 +79,6 @@ importers:
       eslint: 8.40.0
       postcss: 8.4.23
       tailwindcss: 3.3.2
-      typescript: 5.0.4
-
-  packages/api:
-    specifiers:
-      '@acme/auth': workspace:*
-      '@acme/db': workspace:*
-      '@acme/eslint-config': workspace:*
-      '@trpc/server': ^10.25.0
-      eslint: ^8.40.0
-      superjson: 1.9.1
-      typescript: ^5.0.4
-      zod: ^3.21.4
-    dependencies:
-      '@acme/auth': link:../auth
-      '@acme/db': link:../db
-      '@trpc/server': 10.26.0
-      superjson: 1.9.1
-      zod: 3.21.4
-    devDependencies:
-      '@acme/eslint-config': link:../config/eslint
-      eslint: 8.40.0
       typescript: 5.0.4
 
   packages/auth:
@@ -176,12 +147,14 @@ importers:
   packages/db:
     specifiers:
       '@prisma/client': ^4.13.0
+      '@types/node': ^18.16.5
       dotenv-cli: ^7.2.1
       prisma: ^4.13.0
       typescript: ^5.0.4
     dependencies:
       '@prisma/client': 4.14.0_prisma@4.14.0
     devDependencies:
+      '@types/node': 18.16.9
       dotenv-cli: 7.2.1
       prisma: 4.14.0
       typescript: 5.0.4
@@ -1866,55 +1839,6 @@ packages:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       use-sync-external-store: 1.2.0_react@18.2.0
-    dev: false
-
-  /@trpc/client/10.26.0_@trpc+server@10.26.0:
-    resolution: {integrity: sha512-ojHxQFIE97rBEGPK8p1ijbzo0T1IdEBoJ9fFSgWWL9FMuEEA/DNQ9s0uuiOrDKhCCdTFT1unfRharoJhB2/O2w==}
-    peerDependencies:
-      '@trpc/server': 10.26.0
-    dependencies:
-      '@trpc/server': 10.26.0
-    dev: false
-
-  /@trpc/next/10.26.0_5wlj4zqd5hbm7ghnogzr2cn6qq:
-    resolution: {integrity: sha512-p328crXBH6C228LKxjqbpDEXdLmy4+LdgsZuYK3oFMqaJEmCT22b+zcQ9IvQrcPfDxhKOpJym0QpuDNaWpG2qg==}
-    peerDependencies:
-      '@tanstack/react-query': ^4.18.0
-      '@trpc/client': 10.26.0
-      '@trpc/react-query': 10.26.0
-      '@trpc/server': 10.26.0
-      next: '*'
-      react: '>=16.8.0'
-      react-dom: '>=16.8.0'
-    dependencies:
-      '@tanstack/react-query': 4.29.7_biqbaboplfbrettd7655fr4n2y
-      '@trpc/client': 10.26.0_@trpc+server@10.26.0
-      '@trpc/react-query': 10.26.0_umfrugaz453xuwiifkhz4usemu
-      '@trpc/server': 10.26.0
-      next: 13.4.2_biqbaboplfbrettd7655fr4n2y
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
-      react-ssr-prepass: 1.5.0_react@18.2.0
-    dev: false
-
-  /@trpc/react-query/10.26.0_umfrugaz453xuwiifkhz4usemu:
-    resolution: {integrity: sha512-n+enpalaCZhd3A/mbZmXeydRZHsAJo7mzc2ncgHn5S+C3SrfOM897uQdbHdj02Li25ULxzP1O92w+vZzmFbgkA==}
-    peerDependencies:
-      '@tanstack/react-query': ^4.18.0
-      '@trpc/client': 10.26.0
-      '@trpc/server': 10.26.0
-      react: '>=16.8.0'
-      react-dom: '>=16.8.0'
-    dependencies:
-      '@tanstack/react-query': 4.29.7_biqbaboplfbrettd7655fr4n2y
-      '@trpc/client': 10.26.0_@trpc+server@10.26.0
-      '@trpc/server': 10.26.0
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
-    dev: false
-
-  /@trpc/server/10.26.0:
-    resolution: {integrity: sha512-+Wt0NFAeflVSNiUnHIDNN3C8jP7XIRmYrcgJ6IsAnm0lK4p/FkpCpeu1aig5qxrgZx30PHNDLZ/3FttVSEW2aQ==}
     dev: false
 
   /@types/eslint/8.37.0:
@@ -4570,14 +4494,6 @@ packages:
       use-sidecar: 1.1.2_s3k22s5ab4eu26xuel7hiaraxy
     dev: false
 
-  /react-ssr-prepass/1.5.0_react@18.2.0:
-    resolution: {integrity: sha512-yFNHrlVEReVYKsLI5lF05tZoHveA5pGzjFbFJY/3pOqqjGOmMmqx83N4hIjN2n6E1AOa+eQEUxs3CgRnPmT0RQ==}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    dependencies:
-      react: 18.2.0
-    dev: false
-
   /react-style-singleton/2.2.1_s3k22s5ab4eu26xuel7hiaraxy:
     resolution: {integrity: sha512-ZWj0fHEMyWkHzKYUr2Bs/4zU6XLmq9HsgBURm7g5pAVfyn49DgUiNgY2d4lXRlYSiCif9YBGpQleewkcqddc7g==}
     engines: {node: '>=10'}
@@ -5309,6 +5225,26 @@ packages:
   /yocto-queue/0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
+
+  /zact/0.0.2_next@13.4.2:
+    resolution: {integrity: sha512-mVXKgUI9FOv9dkCuY2a6yKzFFWRhkvdBlVXVa/FCXDHB3kkqOv4N59AGwC2lHJdGxpT9gX9VzHX9Pxei9fdoJA==}
+    peerDependencies:
+      next: ^13.2.5-canary.x
+    dependencies:
+      next: 13.4.2_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      zod: 3.21.4
+      zod-validation-error: 1.3.0_zod@3.21.4
+    dev: false
+
+  /zod-validation-error/1.3.0_zod@3.21.4:
+    resolution: {integrity: sha512-4WoQnuWnj06kwKR4A+cykRxFmy+CTvwMQO5ogTXLiVx1AuvYYmMjixh7sbkSsQTr1Fvtss6d5kVz8PGeMPUQjQ==}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      zod: ^3.18.0
+    dependencies:
+      zod: 3.21.4
+    dev: false
 
   /zod/3.21.4:
     resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}

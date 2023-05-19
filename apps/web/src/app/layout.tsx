@@ -27,7 +27,7 @@ export const metadata = {
       url: "https://github.com/braydenwerner",
     },
   ],
-  creator: "shadcn",
+  creator: "braydenwerner",
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "white" },
     { media: "(prefers-color-scheme: dark)", color: "black" },
@@ -74,6 +74,7 @@ export default function RootLayout({
             <div className="relative flex min-h-screen flex-col">
               {children}
             </div>
+            <div>tessts</div>
           </ThemeProvider>
           <TailwindIndicator />
         </AuthSessionProvider>

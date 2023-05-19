@@ -11,7 +11,7 @@ import {
   DropdownMenuTrigger,
 } from "@acme/ui";
 
-import { Icons } from "~/features/ui/icons";
+import { Icons } from "~/features/ui";
 
 export function ThemeToggle() {
   const { setTheme } = useTheme();

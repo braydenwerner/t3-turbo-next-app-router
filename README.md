@@ -1,16 +1,17 @@
-# t3-turbo-next-app-router-with-shared-ui
+# t3-turbo-next-app-router
 
 ## About
 
-- Next.js (using app router)
+- Next.js (using app router, server components, server actions)
 - TypeScript
-- tRPC
 - Prisma
 - Tailwind
 - NextAuth
 - Turborepo
 - [shadcn/ui](https://github.com/shadcn/ui) components
 - Light / dark theme support, check out `apps/web/src/app/styles/globals.css`
+
+> Using server actions over REST/GraphQL/tRPC, etc.
 
 ```
 .github
@@ -20,10 +21,9 @@
   └─ Recommended extensions and settings for VSCode users
 apps
   └─ web
-      ├─ Next.js 13 (using app router)
+      ├─ Next.js 13 (app router, server components, server actions)
       ├─ React 18
-      ├─ Tailwind CSS
-      └─ E2E Typesafe API Server & Client
+      └─ Tailwind CSS
 packages
  ├─ api
  |   └─ tRPC v10 router definition
