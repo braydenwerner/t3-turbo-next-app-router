@@ -19,7 +19,6 @@
     "**/*.tsx",
     "**/*.cjs",
     "**/*.mjs",
-    ".next/types/**/*.ts",
-    "../../packages/ui/src/tailwind-indicator.tsx"
+    ".next/types/**/*.ts"
   ]
 }
