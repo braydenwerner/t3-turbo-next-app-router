@@ -62,6 +62,9 @@ pnpm i
 # There is an `.env.example` in the root directory you can use for reference
 cp .env.example .env
 
+# Generate prisma client once you have added all .env vars
+pnpm db:generate
+
 # Push the Prisma schema to your database
 pnpm db:push
 ```
