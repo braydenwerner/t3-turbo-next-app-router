@@ -2,8 +2,7 @@
 
 ## About
 
-- Next.js (using app router, server components, server actions)
-- Zact (validated and typesafe server actions)
+- Next.js (using app router, server components, typesafe server actions)
 - TypeScript
 - Prisma
 - Tailwind

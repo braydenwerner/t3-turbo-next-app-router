@@ -1,14 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { useZact } from "zact/client";
 
 import { Button, Input } from "@acme/ui";
 
 import { createPost } from "~/app/_actions/post";
+import { useValidatedAction } from "~/hooks/useValidatedAction";
 
 export function CreatePostForm() {
-  const { mutate, error } = useZact(createPost);
+  const { mutate, error } = useValidatedAction(createPost);
 
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");

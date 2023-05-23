@@ -1,18 +1,17 @@
 "use client";
 
-import { useZact } from "zact/client";
-
 import { type Post } from "@acme/db";
 import { Button } from "@acme/ui";
 
 import { deletePost } from "~/app/_actions/post";
+import { useValidatedAction } from "~/hooks/useValidatedAction";
 
 interface PostCardProps {
   post: Post;
 }
 
 export function PostCard({ post }: PostCardProps) {
-  const { mutate } = useZact(deletePost);
+  const { mutate } = useValidatedAction(deletePost);
 
   return (
     <div className="flex flex-row rounded-lg p-4 transition-all hover:scale-[101%]">
